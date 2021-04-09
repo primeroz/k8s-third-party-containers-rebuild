@@ -1,9 +1,13 @@
 ---
+name: 'dockerhub-build'
+description: 'Build Dockerfile Images for dockerhub'
 inputs:
   context:
     description: 'Directory containing Dockerfile'
+    required: true
   tags:
     description: 'image repository/tag for the image'
+    required: true
 runs:
   using: "composite"
   steps:
