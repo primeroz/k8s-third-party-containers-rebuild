@@ -35,6 +35,6 @@ quay_workflows() {
 	done
 }
 
-
+rm -rf .github/workflows/*
 docker_workflows
 quay_workflows
